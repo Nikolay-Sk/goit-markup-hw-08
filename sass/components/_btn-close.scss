@@ -1,0 +1,27 @@
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  /* margin-top: 8px;
+  margin-right: 8px;
+  margin-left: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $white-color;
+  border-radius: 50%;
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+
+    &:hover {
+      fill: $accent-color;
+    }
+  }
+}

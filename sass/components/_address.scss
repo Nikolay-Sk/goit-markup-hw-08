@@ -1,0 +1,119 @@
+.address {
+  margin-left: auto;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    //  :not(:last-child) padding-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // display: flex;
+  }
+
+  &__header {
+    display: block;
+    padding: 0;
+    color: $primary-text-color;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    font-style: normal;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      text-align: center;
+      &:not(:last-child) {
+        padding-bottom: 16px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.16;
+      &:not(:last-child) {
+        margin-right: 30px;
+        padding-bottom: 10px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        display: inline;
+        font-size: 14px;
+        line-height: 1.12;
+      }
+    }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    &:hover .envelope-icon,
+    &:focus .envelope-icon {
+      fill: $accent-color;
+    }
+
+    &:hover .smartphone-icon,
+    &:focus .smartphone-icon {
+      fill: $accent-color;
+    }
+  }
+}
+
+.envelope-icon {
+  vertical-align: middle;
+  padding: 0;
+  margin-right: 10px;
+  height: 12px;
+  width: 16px;
+  fill: #757575;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 10px;
+    width: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 12px;
+    width: 16px;
+  }
+}
+
+.smartphone-icon {
+  vertical-align: middle;
+  padding: 0;
+  margin-right: 10px;
+  height: 15px;
+  width: 10px;
+  fill: #757575;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 14px;
+    width: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 16px;
+    width: 10px;
+  }
+}

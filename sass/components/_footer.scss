@@ -1,0 +1,241 @@
+.footer-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+}
+
+.footer-title-two {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $white-color;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+  }
+}
+
+.footer-section {
+  margin-right: auto;
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  justify-content: center;
+  // justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  &-box {
+    width: 100%;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 0px) / 2);
+    }
+    @media screen and (max-width: 1199px) {
+      // margin-left: auto;
+      // margin-right: auto;
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 301px;
+    }
+    &2 {
+      @media screen and (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+
+  &-form {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+}
+
+.footer-logo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: $accent-color;
+  text-decoration: none;
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.077;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.2;
+    }
+  }
+  &-secondary {
+    color: $white-color;
+  }
+}
+
+.address-text {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  color: $white-color;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+.address-footer {
+  display: block;
+
+  color: $secondory-white-color;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.form-footer {
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: 1199px) {
+    // margin-right: auto;
+    // margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.input-form-footer {
+  padding-left: 16px;
+
+  max-width: 450px;
+  height: 50px;
+
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 450px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.button-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.footer-button-icon {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  fill: $white-color;
+}
+
+.social-network-two {
+  text-align: left;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
+}
+
+.footer-section-form {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 60px;
+  }
+}

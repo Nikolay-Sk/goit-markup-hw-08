@@ -1,0 +1,250 @@
+/* client css */
+
+.clients-section {
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  padding-top: 60px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.client {
+  margin: 0;
+  padding: 0;
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    color: $title-text-color;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__element {
+    display: block;
+
+    width: calc((100% - 30px * 1) / 2);
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 30px * 2) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 30px * 5) / 6);
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+    &1 {
+      height: 90px;
+    }
+
+    &:hover,
+    &1:focus {
+      border: 1px solid $accent-color;
+    }
+    &:hover .client1-icon,
+    &1:focus .client1-icon {
+      fill: $accent-color;
+    }
+    &:hover .client2-icon,
+    &1:focus .client2-icon {
+      fill: $accent-color;
+    }
+    &:hover .client3-icon,
+    &1:focus .client3-icon {
+      fill: $accent-color;
+    }
+    &:hover .client4-icon,
+    &1:focus .client4-icon {
+      fill: $accent-color;
+    }
+    &:hover .client5-icon,
+    &1:focus .client5-icon {
+      fill: $accent-color;
+    }
+    &:hover .client6-icon,
+    &1:focus .client6-icon {
+      fill: $accent-color;
+    }
+  }
+}
+
+.client1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-icon {
+    width: 45px;
+    height: 50px;
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* client2 list css*/
+
+// .client__element:hover .client2-icon,
+// .client__element1:focus .client2-icon {
+//   fill: $accent-color;
+// }
+
+.client2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-icon {
+    width: 40px;
+    height: 52px;
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* client3 list css*/
+
+// .client__element:hover .client3-icon,
+// .client__element1:focus .client3-icon {
+//   fill: $accent-color;
+// }
+
+.client3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-icon {
+    width: 41px;
+    height: 43px;
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* client4 list css*/
+
+// .client__element:hover .client4-icon,
+// .client__element1:focus .client4-icon {
+//   fill: $accent-color;
+// }
+
+.client4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-icon {
+    width: 80px;
+    height: 42px;
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* client5 list css*/
+
+// .client__element:hover .client5-icon,
+// .client__element1:focus .client5-icon {
+//   fill: $accent-color;
+// }
+
+.client5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-icon {
+    width: 59px;
+    height: 47px;
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* client6 list css*/
+
+// .client__element:hover .client6-icon,
+// .client__element1:focus .client6-icon {
+//   fill: $accent-color;
+// }
+
+.client6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-icon {
+    width: 88px;
+    height: 45px;
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

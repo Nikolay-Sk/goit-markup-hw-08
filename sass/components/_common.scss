@@ -1,0 +1,48 @@
+body {
+  background-color: $white-color;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  // outline: 3px solid red;
+
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.img {
+  display: block;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  color: $title-text-color;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.footer-title,
+.portfolio-title {
+  /* margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0; */
+  display: none;
+}

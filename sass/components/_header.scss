@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+  // display: block;
+  // outline: 3px solid red;
+  // width: 100%;
+  // max-width: 1200px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__container {
+    // width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+      // max-width: 1199px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+}
