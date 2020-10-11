@@ -16,15 +16,21 @@
   &-text {
     margin: 0;
     padding-top: 40px;
-    padding-left: 41px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 2px;
+    text-align: center;
+
     font-family: Roboto;
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
-    text-align: left;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: $title-text-color;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
   }
 }

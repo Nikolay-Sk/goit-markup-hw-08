@@ -45,33 +45,53 @@
   &__contract {
     font-family: Roboto;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.72;
+    font-size: 12px;
+    line-height: 1.17;
 
     letter-spacing: 0.03em;
 
     color: $accent-color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
+
   &__checkbox {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
     padding-top: 20px;
     padding-bottom: 30px;
 
+    @media screen and (max-width: 341px) {
+      padding-bottom: 20px;
+    }
     &-label {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       margin-right: 7px;
       font-family: Roboto;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
+      font-size: 12px;
+      line-height: 1.17;
 
       letter-spacing: 0.03em;
 
       color: $primary-text-color;
+
+      @media screen and (max-width: 341px) {
+        text-align: center;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+      }
     }
 
     &-icon {
@@ -83,6 +103,10 @@
       border: 1px solid $title-text-color;
 
       border-radius: 2px;
+
+      @media screen and (max-width: 341px) {
+        margin-right: 3px;
+      }
     }
   }
 

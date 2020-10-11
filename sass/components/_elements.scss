@@ -119,4 +119,17 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 370px) {
+    padding: 44px 24px 0 24px;
+    max-height: 220px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  @media screen and (max-width: 300px) {
+    padding: 54px 24px 0 24px;
+    max-height: 200px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
